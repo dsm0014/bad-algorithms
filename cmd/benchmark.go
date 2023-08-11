@@ -45,7 +45,6 @@ func benchBad(n []int) {
 	defer funcTimer()()
 	log.Printf("O(n!) algorithm where n has a size of: %d", len(n))
 	log.Printf(totalIterationsF, bad.NFactorial(n))
-	return
 }
 
 func benchWorse(n []int) {
@@ -53,7 +52,6 @@ func benchWorse(n []int) {
 	log.Printf("O(n^n) algorithm where n has a size of: %d", l)
 	defer funcTimer()()
 	log.Printf(totalIterationsF, bad.NToTheN(n, l))
-	return
 }
 
 func benchWorst(n []int) {
